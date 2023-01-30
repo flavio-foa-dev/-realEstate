@@ -19,4 +19,16 @@
 8. sequelize
 9. sequelize-cli
   - npx sequelize-cli init
-
+  - .sequelizerc
+    - const path = require('path');
+    module.exports = {
+      'config': path.resolve('src/api/config/config.json'),
+      'models-path': path.resolve('src/api/models'),
+      'seeders-path': path.resolve('src/api/seeders'),
+      'migrations-path': path.resolve('src/api/migrations')
+    };
+  -  npx sequelize-cli model:create --name user --attributes <name>:string,<ative>:boolean
+  - sequelize-cli
+  - sequelize-cli
+  - sequelize-cli
+  - sequelize-cli
