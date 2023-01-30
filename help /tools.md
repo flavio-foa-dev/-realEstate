@@ -12,4 +12,11 @@
   - "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   - "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch",
   - "test:coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage"
+4. express
+5. dotenv
+6. typescript
+7. msql2
+8. sequelize
+9. sequelize-cli
+  - npx sequelize-cli init
 
