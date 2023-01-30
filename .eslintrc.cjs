@@ -5,7 +5,12 @@ module.exports = {
   },
   extends: 'standard-with-typescript',
   overrides: [
+    {
+      files: ['*.test.js'],
+      env: { jest: true }
+    }
   ],
+
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module'
