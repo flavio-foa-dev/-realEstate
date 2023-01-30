@@ -6,8 +6,8 @@ services:
       - SYS_NICE
     restart: always
     environment:
-      - MYSQL_DATABASE=users
-      - MYSQL_ROOT_PASSWORD=12345678910
+      - MYSQL_DATABASE=imobiliaria
+      - MYSQL_ROOT_PASSWORD=123456789
     ports:
       - '3306:3306'
     volumes:
