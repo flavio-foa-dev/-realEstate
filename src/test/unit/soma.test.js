@@ -1,4 +1,4 @@
-import { sum } from '../../verify/calc.js';
+const { sum } = require('../../verify/calc.js');
 
 describe('calc', function () {
   it('should sum two numbers', function () {

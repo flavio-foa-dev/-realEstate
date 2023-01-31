@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch",
@@ -22,6 +21,7 @@
   },
   "homepage": "https://github.com/flavio-foa-dev/-realEstate#readme",
   "devDependencies": {
+    "@types/node": "^18.11.18",
     "@typescript-eslint/eslint-plugin": "^5.49.0",
     "eslint": "^8.33.0",
     "eslint-config-standard-with-typescript": "^33.0.0",

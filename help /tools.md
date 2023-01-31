@@ -15,9 +15,10 @@
 4. express
 5. dotenv
 6. typescript
+   - @types/node
 7. msql2
 8. sequelize
-9. sequelize-cli
+9.  sequelize-cli
   - npx sequelize-cli init
   - .sequelizerc
     - const path = require('path');
@@ -27,8 +28,8 @@
       'seeders-path': path.resolve('src/api/seeders'),
       'migrations-path': path.resolve('src/api/migrations')
     };
-  -  npx sequelize-cli model:create --name user --attributes <name>:string,<ative>:boolean
-  - sequelize-cli
-  - sequelize-cli
-  - sequelize-cli
+  - npx sequelize-cli model:create --name user --attributes <name>:string,<ative>:boolean
+  - npx sequelize-cli db:migrate
+  - npx sequelize-cli seed:generate --name <nome>
+  - npx sequelize-cli db:seed:all
   - sequelize-cli

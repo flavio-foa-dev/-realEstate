@@ -5,6 +5,6 @@ const sum = (a, b) => {
 const result = sum(10, 12);
 console.log(result);
 
-export {
+module.exports = {
   sum
 };
