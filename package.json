@@ -2,13 +2,13 @@
   "name": "imobiliaria_b",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch",
     "test:coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
     "start": "node index.js",
-    "dev": "nodemon --exec ts-node-dev server.ts"
+    "dev": "nodemon server.js"
 
   },
   "repository": {
@@ -23,16 +23,13 @@
   },
   "homepage": "https://github.com/flavio-foa-dev/-realEstate#readme",
   "devDependencies": {
-    "@types/express": "^4.17.16",
-    "@types/node": "^18.11.18",
     "@typescript-eslint/eslint-plugin": "^5.49.0",
     "eslint": "^8.33.0",
     "eslint-config-standard-with-typescript": "^33.0.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-promise": "^6.1.1",
-    "nodemon": "^2.0.20",
-    "ts-node-dev": "^2.0.0"
+    "nodemon": "^2.0.20"
   },
   "dependencies": {
     "dotenv": "^16.0.3",
@@ -40,7 +37,6 @@
     "jest": "^29.4.1",
     "mysql2": "^3.1.0",
     "sequelize": "^6.28.0",
-    "sequelize-cli": "^6.6.0",
-    "typescript": "^4.9.5"
+    "sequelize-cli": "^6.6.0"
   }
 }
