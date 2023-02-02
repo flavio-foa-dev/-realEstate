@@ -13,7 +13,10 @@ module.exports = (sequelize, DataTypes) => {
       Properties.hasMany(models.Images, {
         foreignKey: 'propertieId'
       });
-      Properties.belongsTo(models.Users);
+      Properties.belongsTo(models.Users, {
+        as: 'users',
+        foreignKey: 'id'
+      });
     }
   }
   Properties.init({
@@ -28,6 +31,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'Properties'
+
   });
   return Properties;
 };
