@@ -3,6 +3,7 @@ const PropertieController = require('../controllers/PropertiesController');
 
 const routerPropertie = Router();
 
+routerPropertie.get('/api/properties/deleted', PropertieController.getPropertieDeleted);
 routerPropertie.get('/api/properties/owners/:userId', PropertieController.getPropertieUser);
 routerPropertie.get('/api/properties', PropertieController.getProperties);
 routerPropertie.get('/api/properties/:id', PropertieController.getPropertie);
