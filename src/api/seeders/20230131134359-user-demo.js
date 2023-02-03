@@ -11,9 +11,7 @@ module.exports = {
         telephone: '22999999999',
         cpf: '09090990921',
         role: 'admin',
-        active: true,
-        createdAt: new Date(),
-        updatedAt: new Date()
+        active: true
       },
       {
         name: 'Luiza',
@@ -22,9 +20,7 @@ module.exports = {
         telephone: '22999999999',
         cpf: '09090990921',
         role: 'user',
-        active: true,
-        createdAt: new Date(),
-        updatedAt: new Date()
+        active: true
       },
       {
         name: 'Cristina Doe',
@@ -33,9 +29,7 @@ module.exports = {
         telephone: '22999999999',
         cpf: '09090990921',
         role: 'user',
-        active: true,
-        createdAt: new Date(),
-        updatedAt: new Date()
+        active: true
       },
       {
         name: 'Renata Brito',
@@ -44,9 +38,7 @@ module.exports = {
         telephone: '22999999999',
         cpf: '09090990921',
         role: 'user',
-        active: true,
-        createdAt: new Date(),
-        updatedAt: new Date()
+        active: true
       },
       {
         name: 'Erick Brito',
@@ -55,9 +47,7 @@ module.exports = {
         telephone: '22999999999',
         cpf: '09090990921',
         role: 'user',
-        active: true,
-        createdAt: new Date(),
-        updatedAt: new Date()
+        active: true
       },
       {
         name: 'Rogerio santos',
@@ -66,9 +56,7 @@ module.exports = {
         telephone: '22999999999',
         cpf: '09090990921',
         role: 'user',
-        active: true,
-        createdAt: new Date(),
-        updatedAt: new Date()
+        active: true
       },
       {
         name: 'Pedro Doe',
@@ -77,9 +65,7 @@ module.exports = {
         telephone: '22999999999',
         cpf: '09090990921',
         role: 'user',
-        active: true,
-        createdAt: new Date(),
-        updatedAt: new Date()
+        active: true
       },
       {
         name: 'Jorge Doe',
@@ -88,9 +74,7 @@ module.exports = {
         telephone: '22999999999',
         cpf: '09090990921',
         role: 'user',
-        active: true,
-        createdAt: new Date(),
-        updatedAt: new Date()
+        active: true
       }
     ], {});
   },

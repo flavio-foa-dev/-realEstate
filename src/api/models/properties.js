@@ -21,12 +21,14 @@ module.exports = (sequelize, DataTypes) => {
   }
   Properties.init({
     ownerId: DataTypes.INTEGER,
+    active: DataTypes.BOOLEAN,
     type: DataTypes.STRING,
     state: DataTypes.STRING,
     city: DataTypes.STRING,
     district: DataTypes.STRING,
     status: DataTypes.STRING,
     buyerUser: DataTypes.NUMBER,
+    description: DataTypes.STRING,
     price: DataTypes.INTEGER
   }, {
     sequelize,

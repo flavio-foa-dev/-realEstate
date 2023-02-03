@@ -7,63 +7,43 @@ module.exports = {
       [
         {
           url: 'www.exemple1.com.br',
-          propertieId: 1,
-          createdAt: new Date(),
-          updatedAt: new Date()
+          propertieId: 1
         },
         {
           url: 'www.exemple1.com.br',
-          propertieId: 1,
-          createdAt: new Date(),
-          updatedAt: new Date()
+          propertieId: 1
         },
         {
           url: 'www.exemple1.com.br',
-          propertieId: 2,
-          createdAt: new Date(),
-          updatedAt: new Date()
+          propertieId: 2
         },
         {
           url: 'www.exemple1.com.br',
-          propertieId: 2,
-          createdAt: new Date(),
-          updatedAt: new Date()
+          propertieId: 2
         },
         {
           url: 'www.exemple1.com.br',
-          propertieId: 3,
-          createdAt: new Date(),
-          updatedAt: new Date()
+          propertieId: 3
         },
         {
           url: 'www.exemple1.com.br',
-          propertieId: 3,
-          createdAt: new Date(),
-          updatedAt: new Date()
+          propertieId: 3
         },
         {
           url: 'www.exemple1.com.br',
-          propertieId: 4,
-          createdAt: new Date(),
-          updatedAt: new Date()
+          propertieId: 4
         },
         {
           url: 'www.exemple1.com.br',
-          propertieId: 4,
-          createdAt: new Date(),
-          updatedAt: new Date()
+          propertieId: 4
         },
         {
           url: 'www.exemple1.com.br',
-          propertieId: 5,
-          createdAt: new Date(),
-          updatedAt: new Date()
+          propertieId: 5
         },
         {
           url: 'www.exemple1.com.br',
-          propertieId: 5,
-          createdAt: new Date(),
-          updatedAt: new Date()
+          propertieId: 5
         }
       ], {});
   },

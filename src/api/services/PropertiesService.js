@@ -23,18 +23,18 @@ class PropertieService {
   }
 
   static async createPropertie (user) {
-    const { ownerId, type, state, city, district, price, status } = user;
+    const { ownerId, type, state, city, district, price, description, status } = user;
     const parsePropertie = {
       ownerId,
+      active: true,
       type,
       state,
       city,
       district,
       price,
       status,
-      buyerUser: null,
-      createdAt: new Date(),
-      updatedAt: new Date()
+      description,
+      buyerUser: null
     };
     const userCreated = await propertieModel.Properties.create(parsePropertie);
 

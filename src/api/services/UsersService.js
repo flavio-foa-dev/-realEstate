@@ -28,9 +28,8 @@ class UserService {
       telephone,
       cpf,
       role: 'user',
-      active: true,
-      createdAt: new Date(),
-      updatedAt: new Date()
+      active: true
+
     };
     const userCreated = await userModel.Users.create(parseUser);
 
