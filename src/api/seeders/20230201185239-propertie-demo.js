@@ -7,63 +7,63 @@ module.exports = {
       [
         {
           ownerId: 1,
+          active: true,
           type: 'casa',
           state: 'Rio de Janeiro',
           city: 'Araruama',
           district: 'Pontinha',
           status: 'a venda',
           buyerUser: null,
-          price: 20.000,
-          createdAt: new Date(),
-          updatedAt: new Date()
+          description: 'Lindo imovel',
+          price: 20.000
         },
         {
           ownerId: 1,
+          active: true,
           type: 'casa',
           state: 'Rio de Janeiro',
           city: 'Araruama',
           district: 'Pontinha',
           status: 'a venda',
           buyerUser: null,
-          price: 20.000,
-          createdAt: new Date(),
-          updatedAt: new Date()
+          description: 'Lindo imovel',
+          price: 20.000
         },
         {
           ownerId: 2,
+          active: true,
           type: 'casa',
           state: 'Rio de Janeiro',
           city: 'Araruama',
           district: 'Pontinha',
           status: 'a venda',
           buyerUser: null,
-          price: 20.000,
-          createdAt: new Date(),
-          updatedAt: new Date()
+          description: 'Lindo imovel',
+          price: 20.000
         },
         {
           ownerId: 3,
+          active: true,
           type: 'casa',
           state: 'Rio de Janeiro',
           city: 'Araruama',
           district: 'Pontinha',
           status: 'a venda',
           buyerUser: null,
-          price: 20.000,
-          createdAt: new Date(),
-          updatedAt: new Date()
+          description: 'Lindo imovel',
+          price: 20.000
         },
         {
           ownerId: 4,
+          active: true,
           type: 'casa',
           state: 'Rio de Janeiro',
           city: 'Araruama',
           district: 'Pontinha',
           status: 'a venda',
           buyerUser: null,
-          price: 20.000,
-          createdAt: new Date(),
-          updatedAt: new Date()
+          description: 'Lindo imovel',
+          price: 20.000
         }
       ], {});
   },
