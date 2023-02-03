@@ -1,14 +1,14 @@
 const PropertieService = require('../services/PropertiesService');
 
 class PropertieController {
-  // static async getPropertieDeleted (_req, res) {
-  //   try {
-  //     const users = await PropertieService.getUsersDeleted();
-  //     return res.status(200).json(users);
-  //   } catch (error) {
-  //     return res.status(500).json({ message: error.message });
-  //   }
-  // }
+  static async getPropertieDeleted (_req, res) {
+    try {
+      const propertiesDeleted = await PropertieService.getUsersDeleted();
+      return res.status(200).json(propertiesDeleted);
+    } catch (error) {
+      return res.status(500).json({ message: error.message });
+    }
+  }
 
   static async getProperties (_req, res) {
     try {

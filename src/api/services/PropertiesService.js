@@ -1,17 +1,17 @@
 const propertieModel = require('../models/index');
 
 class PropertieService {
-  // static async getUsersDeleted () {
-  //   const users = await propertieModel.Properties.findAll({
-  //     where: {
-  //       active: false
-  //     }
-  //   });
-  //   return users;
-  // }
+  static async getUsersDeleted () {
+    const propertiesDeleted = await propertieModel.Properties.findAll({
+      where: {
+        active: false
+      }
+    });
+    return propertiesDeleted;
+  }
 
   static async getProperties () {
-    return propertieModel.Properties.findAll();
+    return propertieModel.Properties.findAll({ where: { active: true } });
   }
 
   static async getPropertie (id) {
