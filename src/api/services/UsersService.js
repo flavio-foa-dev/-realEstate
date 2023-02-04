@@ -1,4 +1,6 @@
+const { sequelize } = require('../models/index');
 const userModel = require('../models/index');
+const propertieModel = require('../models/index');
 
 class UserService {
   static async getUsersDeleted () {
@@ -45,11 +47,28 @@ class UserService {
   }
 
   static async deleteUser (id) {
-    const user = await userModel.Users.findOne({ where: { id, active: true } });
+    const user = await this.getUser(id);
     if (!user) {
       return null;
     }
-    return userModel.Users.update({ active: false }, { where: { id: Number(id) } });
+    return this.transaction(id);
+  }
+
+  static async transaction (id) {
+    const user = await sequelize.transaction(async (t) => {
+      await userModel.Users.update(
+        { active: false },
+        { where: { id: Number(id) } },
+        { transaction: t }
+      );
+      await propertieModel.Properties.update(
+        { active: false },
+        { where: { ownerId: Number(id) } },
+        { transaction: t }
+      );
+    });
+    console.log(user, 'commit 2');
+    return ['deleted'];
   }
 }
 
