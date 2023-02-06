@@ -68,7 +68,7 @@ class UserService {
       );
     });
     console.log(user, 'commit 2');
-    return ['deleted'];
+    return ['deletedTeste'];
   }
 }
 
