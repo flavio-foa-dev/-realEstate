@@ -25,7 +25,8 @@ module.exports = (sequelize, DataTypes) => {
     active: DataTypes.BOOLEAN
   }, {
     sequelize,
-    modelName: 'Users'
+    modelName: 'Users',
+    paranoid: true
   });
   return Users;
 };

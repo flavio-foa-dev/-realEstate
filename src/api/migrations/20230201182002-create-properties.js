@@ -20,6 +20,9 @@ module.exports = {
       type: {
         type: Sequelize.STRING
       },
+      code: {
+        type: Sequelize.STRING
+      },
       state: {
         type: Sequelize.STRING
       },
