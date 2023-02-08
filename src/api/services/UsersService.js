@@ -16,7 +16,8 @@ class UserService {
   }
 
   static async getUser (id) {
-    return db.Users.findOne({ where: { id } });
+    return db.Users.findOne(
+      { where: { id, active: true } });
   }
 
   static async createUser (user) {
@@ -49,28 +50,9 @@ class UserService {
     if (!user) {
       return null;
     }
-    return this.trans(id);
-  }
-
-  static async trans (id) {
-    try {
-      db.sequelize.transaction(async (t) => {
-        await db.Users.update(
-          { active: false },
-          { where: { id: Number(id) } },
-          { transaction: t }
-        );
-        await db.Properties.update(
-          { active: false },
-          { where: { ownerId: Number(x) } },
-          { transaction: t }
-        );
-      });
-
-      return ['deletedTeste'];
-    } catch (e) {
-      throw new Error('Erro', e.message);
-    }
+    return db.Users.destroy(
+      { where: { id: Number(id) } }
+    );
   }
 }
 

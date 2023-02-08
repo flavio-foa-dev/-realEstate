@@ -23,6 +23,7 @@ module.exports = (sequelize, DataTypes) => {
     ownerId: DataTypes.INTEGER,
     active: DataTypes.BOOLEAN,
     type: DataTypes.STRING,
+    code: DataTypes.STRING,
     state: DataTypes.STRING,
     city: DataTypes.STRING,
     district: DataTypes.STRING,
@@ -32,7 +33,8 @@ module.exports = (sequelize, DataTypes) => {
     price: DataTypes.INTEGER
   }, {
     sequelize,
-    modelName: 'Properties'
+    modelName: 'Properties',
+    paranoid: true
 
   });
   return Properties;

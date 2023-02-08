@@ -32,4 +32,4 @@
   - npx sequelize-cli db:migrate
   - npx sequelize-cli seed:generate --name <nome>
   - npx sequelize-cli db:seed:all
-  - sequelize-cli
+  - npx sequelize-cli migration:generate --name

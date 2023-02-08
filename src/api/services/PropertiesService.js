@@ -28,6 +28,7 @@ class PropertieService {
       ownerId,
       active: true,
       type,
+      code: Math.ceil(Math.random() * 10000),
       state,
       city,
       district,
@@ -54,7 +55,8 @@ class PropertieService {
     if (!user) {
       return null;
     }
-    return propertieModel.Properties.update({ active: false }, { where: { id: Number(id) } });
+    return propertieModel.Properties.destroy(
+      { where: { id: Number(id) } });
   }
 }
 
